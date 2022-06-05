@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background-image: url(slike/background.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!--background image URL: https://img.8wallpapers.com/uploads/2018/10/960b461ce66046b48b423112.jpg-->
+    <!--Google Font - Work Sans-->
+		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		<div class="container" class="large-12 medium-10 small-4" style="margin-top: 50px;">
+			<div class="profile">
+				
+				<button class="profile__avatar" id="toggleProfile">
+					💑Find your soulmate💑
+                    <!--URL: https://media0.giphy.com/media/kfRKF0iqA8jyDqq1nH/giphy.gif?cid=0165a076bv76gkyi99mqewp47amh6pxsgrax3m3ft5h5bu9f&rid=giphy.gif&ct=s-->
+					<img src="slike/heart.gif" alt="heart "  /> 
+				</button>
+				<div class="profile__form">
+					<div class="profile__fields">
+						<div class="field">
+							<input type="text" id="ona" class="input" required pattern=.*\S.* />
+							<label for="ona" class="label">She</label>
+						</div>
+						<div class="field">
+							<input type="text" id="on" class="input" required pattern=.*\S.* />
+							<label for="on" class="label">He</label>
+						</div>
+						<div class="profile__footer">
+							<span id="poruka">
+								
+							</span>
+							<button class="btn" id="izracunaj">
+								Calculate
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="large-12 medium-10 small-6" style="text-align: center;">
+            <ul id="rezultati">
+            </ul>
+        </div>
+		
+
+
+        <div class="music" style="display: none; margin-top: 150px;" >
+            <audio controls autoplay>
+                <source src="Bahari - Ways Of Love (Official Audio).mp3" type="audio/ogg" >
+              </audio>
+          </div>
+
+
+
+          
+
+        <script src="js/ljubav.js"></script>
+        <script src="js/index.js"></script>
+</body>
+</html>
